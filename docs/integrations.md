@@ -22,6 +22,13 @@ source hashes, coverage and actual save/edit effects in adapter outputs.
 
 ## Existing command contracts
 
+Two shared file-analysis adapters are now integrated through the optional
+`hardware-design-review` skill: Universal Netlist 1.14.4 for saved pin/net membership
+and Gerbonara 1.6.3 for manufacturing-file inspection. See the
+[Altium handoff and qualification scope](../altium-design-review/references/connectivity-integration.md).
+Their implementations and dependencies live in `hw-skills`; existing Altium
+scripts do not import them or require that checkout.
+
 `altium-design-review/scripts/audit_exports.py` retains its CLI and schema version
 1. It consumes a `.PrjPCB`, explicit variant and BOM/PnP CSVs; its output records
 sources, raw fields, findings, reconciliation and coverage. The current

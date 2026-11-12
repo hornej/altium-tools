@@ -46,6 +46,7 @@ directory layout.
 | --- | --- |
 | `audit_exports.py` | Reads BOM/PnP CSV and saved Altium variant metadata; writes a new JSON report. |
 | `native_inventory.py` | Inventories saved schematic/PCB files using Altium Monkey. Full circuit and physical-instance reconciliation remain review work. |
+| [Shared connectivity and CAM adapters](altium-design-review/references/connectivity-integration.md) | Optional Universal Netlist pin/net evidence and Gerbonara manufacturing-file inspection from `hw-skills`; Altium project/variant and OutputJob handoffs are documented here. |
 | `migrate.py` / `normalize_config.py` | Generate local library staging and adapt an exported importer configuration. |
 | `sync_artifacts.py` | Prepares synchronization CSV/schema files or summarizes a private log; does not execute Workspace updates. |
 | `altium_panel_probe.py` | Discovers native panels and optionally performs scoped read-only UIA queries through Adom Bridge. |
