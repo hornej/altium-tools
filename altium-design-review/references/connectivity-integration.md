@@ -34,9 +34,18 @@ source hash checks do not establish native compile freshness or correctness.
 
 Tests currently cover synthetic flat/repeated-sheet projects, a multi-part
 component, named-variant selection and DNP retention through the real parser.
-Native compiled equivalence, complex buses/harnesses, hidden power and alternate
-library cases remain unqualified. Keep native ERC/DRC and saved parser results
-distinct in reviews.
+The [native AD26.11.1 qualification](../../docs/native-qualification-2026-11-12.md)
+matches all 65 pins on a single-sheet control, but fails on the full annotated
+Bluetooth Sentinel example. The saved engine ignores physical annotation; the
+companion adapter now hashes that dependency and emits a review finding. General
+compiled equivalence, complex buses/harnesses, hidden power and alternate library
+cases remain unqualified. Keep native ERC/DRC and saved parser results distinct.
+
+Use the tested [native capture template](../scripts/native_membership_capture.pas)
+on a disposable copy when repeating this comparison. It forces a full compile,
+rejects empty results and pre-existing output files, and captures workspace states.
+Follow its qualification instructions; an outer MCP success is not evidence of
+successful compilation or correct membership.
 
 ## Manufacturing output handoff
 
@@ -47,7 +56,9 @@ and create the report outside that package.
 
 Supply expected copper/mask/paste/outline/drill roles for the board's stackup
 and service. Map Altium mechanical files from the selected OutJob configuration;
-`GM1` and similar names are ambiguous. Review parser warnings, missing/duplicate
+`GM1`, `GKO` and similar names need role evidence. Native testing confirmed that
+`GKO` identifies the keepout layer, not automatically the fabrication profile.
+Review parser warnings, missing/duplicate
 layers, units, drill diameters/plating and possible drill offsets. The generated
 SVGs are individual source-coordinate previews, not validated layer registration.
 
