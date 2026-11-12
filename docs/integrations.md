@@ -20,6 +20,12 @@ revision and retain its license/notice rather than copying whole upstream trees.
 Keep required document identity, variant, coordinate units, compile freshness,
 source hashes, coverage and actual save/edit effects in adapter outputs.
 
+The [native qualification record](native-qualification-2026-11-12.md) now documents
+actual AD26.11.1 compile, membership and OutputJob tests. A 65-pin flat control
+matches exactly; the annotated hierarchical example fails saved/native
+equivalence. Actual Gerber/drill parsing and native hole measurements were tested,
+with CAM review findings retained. Interactive assembly is deferred.
+
 ## Existing command contracts
 
 Two shared file-analysis adapters are now integrated through the optional

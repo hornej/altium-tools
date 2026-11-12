@@ -1,0 +1,103 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-12",
+  "altium_version": "26.11.1",
+  "altium_mcp_revision": "9ad05d3009912d54ed183221abd244bb86f18696",
+  "universal_netlist_version": "1.14.4",
+  "gerbonara_version": "1.6.3",
+  "variant": "<Default>",
+  "native_compile_method": "IProject.DM_CompileEx(True, Cancelled), after opening an exact project schematic; success and cancellation checked",
+  "connectivity": {
+    "single_sheet_control": {
+      "case": "leaf",
+      "native_components": 15,
+      "native_pins": 65,
+      "saved_components": 15,
+      "saved_pins": 65,
+      "native_only_pin_identities": 0,
+      "saved_only_pin_identities": 0,
+      "different_net_on_shared_pin_identity": 0,
+      "exact_membership_matches": 65,
+      "workspace_state_preserved": true
+    },
+    "hierarchical_bluetooth_sentinel": {
+      "case": "bluetooth",
+      "native_components": 72,
+      "native_pins": 224,
+      "saved_components": 70,
+      "saved_pins": 220,
+      "native_only_pin_identities": 71,
+      "saved_only_pin_identities": 67,
+      "different_net_on_shared_pin_identity": 119,
+      "exact_membership_matches": 34,
+      "workspace_state_preserved": true
+    }
+  },
+  "manufacturing": {
+    "input_file_count": 29,
+    "parsed_gerber_files": 20,
+    "parsed_drill_files": 1,
+    "findings": {
+      "unrecognized_file": 8,
+      "parser_warning": 20,
+      "unclassified_layer": 9,
+      "empty_geometry": 1,
+      "required_role_missing": 1
+    },
+    "drill_objects": 173,
+    "drill_diameters_mm": [
+      0.29997399999999996
+    ],
+    "native_via_count": 173,
+    "native_vias_by_hole": [
+      {
+        "hole_mm": 0.3,
+        "count": 173
+      }
+    ],
+    "native_board_outline": {
+      "x1_mm": -34.4,
+      "y1_mm": -12,
+      "x2_mm": 45.6,
+      "y2_mm": 43,
+      "width_mm": 80,
+      "height_mm": 55,
+      "vertex_count": 12
+    },
+    "source_stability": "unchanged",
+    "fabrication_profile_qualified": false
+  },
+  "artifact_sha256": {
+    "forced-attempt.json": "ca36fda1fc132773c78a67574061a2662d223d23efd8450e0bfbb01ffacb09ad",
+    "native-connectivity.tsv": "efd9de56c63f728430525d9b9f0dfcf4ac93ad9fec57e91cbc4c4d44166d45a3",
+    "forced-comparison-report.json": "8bbb6c34c0b76849138e87ebf2d6813b0e5839ff16828fd1d89046be06c3fb26",
+    "workspace-states.tsv": "00ae604fdd04b197a553b386431e63362df7322cfa716bd7cec93625e3364c20",
+    "leaf/forced-attempt.json": "a2cf17f8e6e9581cefb4333bfe11fdd28ee227ca3d605da5b30c515a57b7f671",
+    "leaf/native-connectivity.tsv": "e8963bf1e5f98faa087916d666f062742613551a5bd4d2ef9d5e06feae904049",
+    "leaf/forced-comparison-report.json": "19a4581254c30892dd6eeb0d5b5f7a53d5f495505458432e8d289d55cf793bbe",
+    "leaf/workspace-states.tsv": "00ae604fdd04b197a553b386431e63362df7322cfa716bd7cec93625e3364c20",
+    "cam-attempt.json": "9f63bcebff718f91fb92cfe36657709b69d574748f70800d9153efb5a28ccc87",
+    "cam-outjob-preparation.json": "2f16f7b1d876f0638d50e167e435a64598fbe2d9d399e58fc2fbdf69f0e9d415",
+    "cam-layer-map.json": "a3a97006625297d57acf6f4df18fc6d81266df44adbaa263c1776eae7c8ea185",
+    "cam-verified-report/report.json": "a585e99de6b177dd7e4393d2b79d255b333ab2028fd15e7085086d01523ab6a5",
+    "native-board-summary.json": "83d2eae7ff083008f3ec38df7193e1b0d69fbd8b3925de1ff8241ba93abe98af",
+    "template-validation/attempt.json": "ba6d52222c5e3be13dfd0925f1fd8a6e507ada9abaae2faf5d5f989e98061a29",
+    "template-validation/native-connectivity.tsv": "e8963bf1e5f98faa087916d666f062742613551a5bd4d2ef9d5e06feae904049"
+  },
+  "preservation": {
+    "changed_preexisting_copied_files": [
+      "Fabrication.OutJob"
+    ],
+    "outjob_change": "deliberate local CAM test preparation; no source schematic/board/project/annotation changes",
+    "workspace_states_preserved": true,
+    "vendor_source_files_redistributed": false
+  },
+  "not_qualified": [
+    "general Altium compiled equivalence",
+    "assembly variants",
+    "ERC/DRC",
+    "full outline geometry and CAM registration",
+    "IPC-to-copper connectivity",
+    "supplier DFM"
+  ]
+}
