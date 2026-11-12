@@ -93,6 +93,11 @@ variant audit or when a proposed part depends on circuit topology. The optional
 `scripts/native_inventory.py` exposes saved SchDoc/PCB evidence through an existing
 Altium Monkey installation without saving any design file.
 
+For actual saved pin/net membership, use the optional
+[connectivity integration](references/connectivity-integration.md), backed by
+Universal Netlist in the installed `hardware-design-review` skill. Select the
+project and assembly variant explicitly; retain parser and native evidence separately.
+
 - Follow physical reference, source document and complete unique-ID/channel path.
   Multi-part symbols and repeated sheets are not duplicate physical components.
   An ambiguous mapping remains unresolved; never join repeated channels solely
@@ -152,6 +157,11 @@ Recheck current supplier requirements, selected data sources, variant settings a
 all output containers. Separate archived design evidence from the files the supplier
 needs. Supplier import success and a zero-count DRC do not by themselves establish
 release readiness.
+
+After generating the selected outputs, use the optional
+[CAM inspection handoff](references/connectivity-integration.md#manufacturing-output-handoff)
+to inspect the actual Gerber/drill files with Gerbonara, including expected layer
+roles and source hashes.
 
 ## Recheck and handoff
 
