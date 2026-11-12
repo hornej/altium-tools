@@ -1,0 +1,39 @@
+# Backend integration boundary
+
+This repository owns Altium-specific skills, adapters, installation guidance and
+acceptance evidence. It consumes generic engineering and sourcing evidence from
+[hw-skills](https://github.com/hornej/hw-skills); the generic repository does not
+need Altium to run.
+
+Third-party backends remain separately versioned dependencies. Current candidates
+are [coffeenmusic/altium-mcp](https://github.com/coffeenmusic/altium-mcp),
+[eda-agent](https://github.com/salitronic/eda-agent),
+[Altium Monkey](https://github.com/wavenumber-eng/altium_monkey),
+[altium-workspace-mcp](https://github.com/Heegiiny/altium-workspace-mcp),
+[altium-designer-mcp](https://github.com/embedded-society/altium-designer-mcp),
+and the [Altium iBOM exporter](https://github.com/zharovdv/InteractiveHTMLBOM4Altium2).
+Listing a candidate does not install it or qualify its native behavior.
+
+The [dated landscape evaluation](https://github.com/hornej/hw-skills/blob/main/docs/tool-landscape-2026-11-12.md)
+contains the comparative evidence and proposed pilots. Pin a tested backend
+revision and retain its license/notice rather than copying whole upstream trees.
+Keep required document identity, variant, coordinate units, compile freshness,
+source hashes, coverage and actual save/edit effects in adapter outputs.
+
+## Existing command contracts
+
+`altium-design-review/scripts/audit_exports.py` retains its CLI and schema version
+1. It consumes a `.PrjPCB`, explicit variant and BOM/PnP CSVs; its output records
+sources, raw fields, findings, reconciliation and coverage. The current
+implementation keeps CSV checks and Altium variant parsing together to preserve
+behavior during relocation. A future generic executable extraction should use a
+versioned evidence interface and retain these regression cases.
+
+The portable component/interface review guidance now lives in the
+[`hardware-design-review` skill](https://github.com/hornej/hw-skills/tree/main/hardware-design-review).
+Altium references forward to that shared material. The Altium release checklist
+and native generation instructions remain here.
+
+Never interpret a status-only MCP response, parser success or zero exit status
+as native design validation. Select one live backend for an operation and retain
+independent saved/exported evidence when checking its result.

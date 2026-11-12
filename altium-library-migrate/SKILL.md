@@ -20,8 +20,8 @@ Use the existing tested Python environment when available; do not silently
 upgrade the binary engine during a migration.
 
 For DigiKey enrichment before import, use the shared
-[API guide](../digikey-part-selection/references/api.md) and
-[credential locations](../digikey-part-selection/references/credentials.md).
+[API guide](https://github.com/hornej/hw-skills/blob/main/digikey-part-selection/references/api.md) and
+[credential locations](https://github.com/hornej/hw-skills/blob/main/digikey-part-selection/references/credentials.md).
 Use digikey-part-selection when the task is choosing new parts rather than
 filling verified metadata for existing identities.
 
