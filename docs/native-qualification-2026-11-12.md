@@ -1,5 +1,9 @@
 # Native Altium qualification — 2026-11-12
 
+**Follow-up:** the connectivity failures below were fixed and rerun successfully;
+see the [physical annotation and hierarchy rerun](native-connectivity-fix-2026-11-12.md).
+This page preserves the original observations. Its CAM findings remain open.
+
 Actual Altium Designer Professional **26.11.1** was used for these tests through
 `coffeenmusic/altium-mcp` revision
 `9ad05d3009912d54ed183221abd244bb86f18696`. The independent readers were Universal
