@@ -34,12 +34,14 @@ source hash checks do not establish native compile freshness or correctness.
 
 Tests currently cover synthetic flat/repeated-sheet projects, a multi-part
 component, named-variant selection and DNP retention through the real parser.
-The [native AD26.11.1 qualification](../../docs/native-qualification-2026-11-12.md)
-matches all 65 pins on a single-sheet control, but fails on the full annotated
-Bluetooth Sentinel example. The saved engine ignores physical annotation; the
-companion adapter now hashes that dependency and emits a review finding. General
-compiled equivalence, complex buses/harnesses, hidden power and alternate library
-cases remain unqualified. Keep native ERC/DRC and saved parser results distinct.
+The [native AD26.11.1 fix and rerun](../../docs/native-connectivity-fix-2026-11-12.md)
+matches all 65 pins on the single-sheet control and all 224 on the full annotated
+Bluetooth Sentinel hierarchy. The companion applies annotation before extraction,
+keeps port-connected hierarchical power local and retains isolated-pin names.
+It reports each physical identity's source/matching basis and refuses unresolved
+or ambiguous mappings. Annotated assembly variants remain blocked; general
+equivalence, additional bus/harness/hidden-power features and alternate libraries
+remain unqualified. Keep native ERC/DRC and saved parser results distinct.
 
 Use the tested [native capture template](../scripts/native_membership_capture.pas)
 on a disposable copy when repeating this comparison. It forces a full compile,

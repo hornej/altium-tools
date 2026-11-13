@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-12",
+  "altium_version": "26.11.1",
+  "native_method": "DM_CompileEx(True, Cancelled), exact disposable project and sheet",
+  "altium_mcp_revision": "9ad05d3009912d54ed183221abd244bb86f18696",
+  "engine_version": "1.14.4",
+  "adapter": "altium-physical-hierarchy",
+  "adapter_version": 1,
+  "cases": [
+    {
+      "name": "Bluetooth Sentinel",
+      "variant": "<Default>",
+      "components": 72,
+      "pins": 224,
+      "nets": 65,
+      "comparison": "matches_supplied_membership",
+      "missing_memberships": 0,
+      "extra_memberships": 0,
+      "identity_bases": {
+        "saved_annotation_uid": 55,
+        "schematic_designator": 5,
+        "saved_annotation_component_uid_and_channel": 14
+      },
+      "source_files_unchanged": 32,
+      "workspace_state_preserved": true,
+      "artifact_sha256": {
+        "capture.pas": "6e791695e6db40be95c540788aafc1d83ac9f2395bc6fef1886fdb2136c904b3",
+        "native-result.json": "45e51cb9af6d72fd53557536b3db0695c469f5a84b72fc93ebdacde70f0f8c46",
+        "native-connectivity.tsv": "efd9de56c63f728430525d9b9f0dfcf4ac93ad9fec57e91cbc4c4d44166d45a3",
+        "native-comparison.json": "75afc6bda55b75a4e5147ee5cf51bc26601778c6bfb00cc931c8ef7c8ff7d4de",
+        "final-comparison.json": "83e0eb18d57df20e587a477b817d3dc5bc4f3db72f91f4c673af01b8d0890b0f",
+        "source-hashes-before.json": "da6fe730b6300509ef424d230860031d5af58c7e5bfdd319ad5aa9bd70018d53",
+        "workspace-states.tsv": "99b3e154aa18fb9e943ee0f4f23b66a4e201c5de7089e1c1475ace7263806e25"
+      }
+    },
+    {
+      "name": "leaf",
+      "variant": "<Default>",
+      "components": 15,
+      "pins": 65,
+      "nets": 30,
+      "comparison": "matches_supplied_membership",
+      "missing_memberships": 0,
+      "extra_memberships": 0,
+      "identity_bases": {
+        "schematic_designator": 16
+      },
+      "source_files_unchanged": 3,
+      "workspace_state_preserved": true,
+      "artifact_sha256": {
+        "capture.pas": "f8dca334b8bcc701d197a1cba0bd8f50033c0ea5777ffe4e52ec2785f1db6807",
+        "native-result.json": "3d01a0647ba7b205500749704c6dbe6a2973478b29fa8da733362814c7b5d28c",
+        "native-connectivity.tsv": "e8963bf1e5f98faa087916d666f062742613551a5bd4d2ef9d5e06feae904049",
+        "native-comparison.json": "d22d3f599ddc82092b7a224ff12be05c8c32541f8e28d6bbed25328bb755513a",
+        "final-comparison.json": "1c8a26c3e4f22bc64aa6d3b0ae6f911d50b6db9561f4781d225cb1aebb87a8b0",
+        "source-hashes-before.json": "abcccd4d2ef3b9d8702d1ee06a6d401c4738d913ef1cc360d9a465dc26346498",
+        "workspace-states.tsv": "99b3e154aa18fb9e943ee0f4f23b66a4e201c5de7089e1c1475ace7263806e25"
+      }
+    }
+  ],
+  "adapter_source_sha256": {
+    "hardware-design-review/scripts/inspect_connectivity.mjs": "9941d25f14e4c7499bcb7aaf5e5b8fab641253ceeb7560997011c8bc36735fd7",
+    "hardware-design-review/scripts/altium/annotation.mjs": "48895226f4ba09f7a024fc9bc0a6c84224839c4b9812c540c0df45c1e594cba8",
+    "hardware-design-review/scripts/altium/channels.mjs": "e11976424e4313e3e0a82f72b1a7acc447f6959b7960ab3ccb7df6f5ab170df7",
+    "hardware-design-review/scripts/altium/load.mjs": "6983e53393815aebb28d4744a7db1fe26284a10e7d5ce5e3e0d5e394b49bf526",
+    "hardware-design-review/scripts/altium/project.mjs": "461798a37f6b1515a1c84bb0573e525069d83f841cafe6f30ef526aa1a301059"
+  },
+  "scope_limits": [
+    "annotated assembly variants blocked",
+    "additional hierarchy and hidden-power features not generally qualified",
+    "CAM/ERC/DRC not rerun in this follow-up"
+  ],
+  "adapter_source_hash_encoding": "UTF-8 with LF newlines"
+}
